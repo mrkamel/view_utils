@@ -2,9 +2,7 @@
 sudo: false
 language: ruby
 rvm:
-  - ruby-head
-before_install:
-  - gem install bundler
+  - ruby-2.5.0
 install:
   - travis_retry bundle install
 script: rspec
