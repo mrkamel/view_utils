@@ -3,6 +3,8 @@ sudo: false
 language: ruby
 rvm:
   - ruby-head
+before_install:
+  - gem install bundler
 install:
   - travis_retry bundle install
 script: rspec
