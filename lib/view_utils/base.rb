@@ -3,10 +3,10 @@ require "view_utils/helper"
 
 module ViewUtils
   class Base
-    attr_accessor :view
+    attr_reader :view
 
     def initialize(view)
-      self.view = view
+      @view = view
     end
 
     def util(name)
