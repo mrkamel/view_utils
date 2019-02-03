@@ -1,7 +1,9 @@
----
+
 sudo: false
 language: ruby
-cache: bundler
 rvm:
-  - 2.5.0
-before_install: gem install bundler -v 1.17.3
+  - ruby-head
+install:
+  - travis_retry bundle install
+script: rspec
+
