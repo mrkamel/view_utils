@@ -53,7 +53,7 @@ In your view:
 To use another util from within your util, you can use the
 util helper within your utils as well:
 
-```
+```ruby
 class UserUtil < ViewUtils::Base
   # ...
 
@@ -66,7 +66,7 @@ end
 For the rare cases, where you need access to the view object,
 you can use the view directly:
 
-```
+```ruby
 class UserUtil < ViewUtils::Base
   # ...
 
